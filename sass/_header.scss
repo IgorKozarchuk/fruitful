@@ -1,0 +1,59 @@
+// Header
+
+@import "vars";
+
+#siteHeader {
+	height: 110px;
+	background-color: $headerBgColor;
+	width: 100%;
+}
+.siteInfo {
+	height: $headerHeight;
+	line-height: $headerHeight;
+}
+#logo {
+	font-family: $headingFont;
+	font-weight: 700;
+	font-size: 48px;
+	text-transform: uppercase;
+	color: $accentColor;
+	cursor: pointer;
+}
+#title {
+	font-family: $paragFont;
+	font-style: italic;
+	font-size: 18px;
+	color: $titleColor;
+	margin-left: 10px;
+}
+.buttons {
+	height: $headerHeight;
+	display: flex;
+	align-items: center;
+	padding-left: 0;
+}
+button {
+	border: none;
+	cursor: pointer;
+}
+button.login {
+	font-family: $paragFont;
+	font-style: italic;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: $textColor;
+	background-color: transparent;
+}
+button.contact {
+	color: $headerBgColor;
+	font-family: $paragFont;
+	font-size: 13px;
+	font-style: italic;
+	text-transform: uppercase;
+	background-color: $accentColor;
+	height: 45px;
+	width: 100%;
+}
+.fa-key {
+	color: $accentColor;
+}

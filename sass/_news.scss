@@ -1,0 +1,25 @@
+// News
+@import "vars";
+
+.news {
+	font-family: $headingFont;
+	h4.recent {
+		color: $accentColor;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+	.news-item {
+		a {
+			text-decoration: none;
+			color: $textColor;
+		}
+		img {
+			width: 100%;
+		}
+		h4 {
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// Imports
+@import "grid";
+@import "vars";
+@import "header";
+@import "navmenu";
+@import "content";
+@import "news";
+
+
+/* Main Style */
+body {
+	font-family: $paragFont;
+	font-size: 18px;
+	color: $textColor;
+	background-color: $contentBgColor;
+}
+
+.wrapper {
+	max-width: 1152px;
+	margin: 0 auto;
+}
+
+#btn-top {
+	display: inline-block;
+	position: fixed;
+	bottom: 45px;
+	right: 15px;
+	font: 14px $headingFont;
+	font-weight: 300;
+	background-color: $contentBgColor;
+	padding: 10px;
+	z-index: 1;
+	.fa-angle-up {
+		padding-right: 6px;
+		vertical-align: top;
+	}
+}
+
+@import "media";

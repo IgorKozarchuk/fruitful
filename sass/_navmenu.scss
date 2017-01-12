@@ -1,0 +1,70 @@
+// Navmenu
+
+@import "vars";
+
+.bg-wrapper {
+	background-color: $navBgColor;
+}
+
+ul.navmenu {
+	list-style-type: none;
+	font-family: $headingFont;
+	li {
+		float: left;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	a {
+		display: block;
+		padding: 23px 20px;
+		color: $navTxtColor;
+		text-decoration: none;
+		&.active, &:hover {
+			background-color: $accentColor;
+		}
+	}
+	.search {
+		position: relative;
+		li {
+			width: 100%;
+		}
+		input {
+			height: 40px;
+			margin: 16px 0;
+			padding-left: 10px;
+			padding-right: 28px;
+			border: none;
+			width: 100%;
+		}
+		.fa-search { 
+			position: absolute;
+			top: 26px;
+			right: 20px;
+			font-size: 18px;
+			color: #81858c;
+			z-index: 1;
+			cursor: pointer;
+		}
+	}
+}
+
+.search input::-webkit-input-placeholder {
+	font: 14px $headingFont;
+	color: $placeholderColor;
+	text-transform: uppercase;
+}
+.search input::-moz-placeholder {
+	font: 14px $headingFont;
+	color: $placeholderColor;
+	text-transform: uppercase;
+}
+.search input:-ms-input-placeholder {
+	font: 14px $headingFont;
+	color: $placeholderColor;
+	text-transform: uppercase;
+}
+.search input:-moz-placeholder {
+	font: 14px $headingFont;
+	color: $placeholderColor;
+	text-transform: uppercase;
+}
